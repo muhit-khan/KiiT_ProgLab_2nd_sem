@@ -8,6 +8,6 @@ int main()
     int byte3 = (n >> 16) & 0xff;
     int byte4 = (n >> 24) & 0xff;
   
-    printf("1st byte(from left): %d \n2nd byte(from left): %d \n3rd byte(from left): %d \n4th byte(from left): %d", byte1, byte2, byte3, byte4);
+    printf("1st byte(from right): %d \n2nd byte(from right): %d \n3rd byte(from right): %d \n4th byte(from right): %d", byte1, byte2, byte3, byte4);
     return 0;
 }
