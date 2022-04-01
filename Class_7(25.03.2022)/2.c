@@ -3,10 +3,11 @@
 int main()
 {
     int h1, m1, h2, m2, m, h, h24_1, h24_2, ampm1, ampm2, h_l, h_s;
-    printf("################\tam = 1, pm = 0\t################\n");
-    printf("Enter first time(hh:mm 1/0)\t:\t");
+    printf("Input time using following format: hh:mm 1/0\n");
+    printf("############## am = 1, pm = 0 ##############\n");
+    printf("Enter first time\t:\t");
     scanf("%d:%d %d", &h1, &m1, &ampm1);
-    printf("Enter second time(hh:mm 1/0)\t:\t");
+    printf("Enter second time\t:\t");
     scanf("%d:%d %d", &h2, &m2, &ampm2);
     
     if(ampm1 == 1 && h1 == 12)
@@ -51,7 +52,7 @@ int main()
             h_s = h24_2;
             h = h_l - h_s;
         }
-    printf("\n%d:%d %d is earlier.\n",h2, m2, ampm2==1?"AM":"PM");   
+    printf("\n%d:%d %s is earlier.\n",h2, m2, ampm2==1?"AM":"PM");   
         
     }
     else
@@ -71,10 +72,10 @@ int main()
             h_s = h24_1;
             h = h_l - h_s;
         }
-    printf("\n%d:%d %d is earlier \n",h1, m1, ampm1==1?"AM":"PM");
+    printf("\n%d:%d %s is earlier \n",h1, m1, ampm1==1?"AM":"PM");
         
     }
-    printf("Time Difference: %d:%d", h, m);
+    printf("\nTime Difference: %d:%d\n\n", h, m);
     
     return 0;
 }

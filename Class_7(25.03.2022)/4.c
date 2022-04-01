@@ -3,17 +3,32 @@
 #include<stdio.h> 
 int main()
 {
-    int day1, mon1, year1,hour1,min1,fr1,
+    int day1, mon1, year1,hour1,min1,ampm1, ampm2, fr1,
         day2, mon2, year2,hour2,min2,fr2;
 
     int day_diff, mon_diff, year_diff,cal1,cal2;         
-    printf("Input date and time using following format: MM/DD/YYYY hh:mm 1/0\n");
-    printf("######################   am = 0, pm = 1   ######################\n");
-    printf("Input the First date and time: ");
-    scanf("%d/%d/%d %d:%d %d", &mon1, &day1, &year1,&hour1,&min1,&fr1);
-    printf("Input the Second date and time: ");
-    scanf("%d/%d/%d %d:%d %d", &mon2, &day2, &year2,&hour2,&min2,&fr2);
-    
+    printf("Input date and time using following format: DD/MM/YYYY hh:mm 1/0\n");
+    printf("######################   am = 1, pm = 0   ######################\n");
+    printf("Input the Earlier date and time\t: ");
+    scanf("%d/%d/%d %d:%d %d", &day1, &mon1, &year1,&hour1,&min1,&ampm1);
+    printf("Input the Second date and time\t: ");
+    scanf("%d/%d/%d %d:%d %d", &day2, &mon2, &year2,&hour2,&min2,&ampm2);
+    if(ampm1 == 1)
+    {
+        fr1 = 0;
+    }
+    else
+    {
+        fr1 = 1;
+    }
+    if(ampm2 == 1)
+    {
+        fr2 = 0;
+    }
+    else
+    {
+        fr2 = 1;
+    }
 
     if(day2 < day1)
     {      
@@ -81,7 +96,7 @@ int main()
         min_diff=(cal1-cal2)%60;
     }
 
-    printf("Difference: %d years %02d months and %02d days %02d hour %02d min.", year_diff, mon_diff, day_diff, hour_diff,min_diff);
+    printf("\nDifference: %d years %02d months and %02d days and %02d hour %02d min.\n\n", year_diff, mon_diff, day_diff, hour_diff,min_diff);
 
     return 0; 
 }
