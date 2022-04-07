@@ -1,11 +1,12 @@
+/*(06/04/2022)  Assignment_09 */
 #include<stdio.h>
 int main()
 {
-	int n, s = 2, x, y;
+	int n, init = 2, x, y;
     float  fact_DENO = 1.0, fact_NUME = 1.0, sum=0;
     printf("Enter the value of 'n': ");
     scanf("%d", &n);
-    while(n>=2)
+    while(n >= init)
     {
         y = n - 1;
         while(y)

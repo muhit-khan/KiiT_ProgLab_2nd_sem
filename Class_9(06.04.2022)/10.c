@@ -1,4 +1,4 @@
-/*(06/04/2022)  Assignment_06 */
+/*(06/04/2022)  Assignment_10 */
 #include<stdio.h>
 int main()
 {
@@ -11,7 +11,7 @@ int main()
 	while(init <= n)
 	{
 		sum += (init-2)/init;
-		init += 4;
+		init += 2;
 	}
 	printf("Summation is %.3f\n\n", sum);
 	return 0;
