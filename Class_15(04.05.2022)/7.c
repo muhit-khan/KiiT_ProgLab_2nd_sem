@@ -15,3 +15,4 @@ int main()
         printf("%d\n", *(a + k));
     return 0;
 }
+//incomple
