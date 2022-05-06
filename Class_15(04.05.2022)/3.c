@@ -1,10 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int a = 20, b = 80;
-    int *c = &a, * d = &b;
-    int sum = *c + *d;
-    printf("%d", sum);
+    int a = 20, b = 80, tem;
+    int *ap = &a, *bp = &b, *temp;
+    *temp = *ap;
+    *ap = *bp;
+    *bp = *temp;
+
+    printf("a = %d\n", *ap);
+    printf("b = %d", *bp);
 
     return 0;
 }
