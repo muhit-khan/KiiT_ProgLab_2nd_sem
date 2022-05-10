@@ -9,7 +9,7 @@ int main()
     printf("a = %d\n", a);
     printf("c = %c\n", b);
     printf("*c = %d\n", *c);
-    printf("*d = %d\n", *d);
+    printf("*d = %c\n", *d);
     printf("%p\n", a);
     printf("%p\n", b);
     printf("%p\n", c);
