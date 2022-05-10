@@ -3,7 +3,7 @@
 #include <string.h>  
 int main()  
 {
-    char str1[11], temp;
+    char str1[10], temp;
     int i, j =0;
     printf (" Enter a string of 10 character: ");
     scanf( "%s", str1);
