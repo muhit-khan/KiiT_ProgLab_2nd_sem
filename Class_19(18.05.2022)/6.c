@@ -17,7 +17,7 @@ int main()
         scanf("%d", &s.marks[i]);
         total_mark = total_mark + s.marks[i];
     }
-    int avg_mark = total_mark/3;
-    printf("\nName: %s\nRoll: %d\nAverage Marks: %d", s.name, s.roll, avg_mark);
+    float avg_mark = total_mark/3;
+    printf("\nName: %s\nRoll: %d\nAverage Marks: %.2f", s.name, s.roll, avg_mark);
     return 0;   
 }
